@@ -11,29 +11,37 @@ These instructions will get you a copy of the project up and running on your loc
 Haven't tested this on another box yet, so YMMV..
 
 ```
+sysmon
 Python 3
 spaCy
 pandas
-[WMI](https://pypi.org/project/WMI/)
+python WMI - https://pypi.org/project/WMI
+pywin32api - https://pypi.org/project/pypiwin32
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Download all prerequisites, then install sysmon with the provided sysmon_config.xml:
 
 ```
-Give the example
+sysmon.exe -i sysmon_config.xml
 ```
 
-And repeat
+After that, you'll need to add the following registry key to enable querying the sysmon event log through WMI:
 
 ```
-until finished
+HKLM\SYSTEM\CurrentControlSet\services\eventlog\Microsoft-Windows-Sysmon/Operational
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Proceed to install all other prerequisites then you should be good to go.
+
+### Running
+
+At least this is pretty simple:
+
+```
+python.exe framework.py
+```
 
 ## Author
 
