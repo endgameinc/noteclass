@@ -1,0 +1,13 @@
+<Sysmon schemaversion="4.00">                               
+    <EventFiltering>
+        <ProcessCreate onmatch="exclude">
+            <ProcessId condition="more than">0</ProcessId>
+        </ProcessCreate>
+        <ProcessTerminate onmatch="exclude">
+            <ProcessId condition="more than">0</ProcessId>
+        </ProcessTerminate>
+        <FileCreate onmatch="include">
+            <TargetFilename condition="end with">.txt</TargetFilename>
+        </FileCreate>
+    </EventFiltering>                                                  
+</Sysmon>
