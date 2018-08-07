@@ -4,14 +4,17 @@ Framework for classifying ransom note text files and using the results to detect
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Haven't tested this on another box yet, so YMMV..
 
 ```
-Give examples
+Python 3
+spaCy
+pandas
+[WMI](https://pypi.org/project/WMI/)
 ```
 
 ### Installing
