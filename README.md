@@ -1,6 +1,6 @@
 # noteclass
 
-Framework for classifying ransom note text files and using the results to detect ransomware at runtime.
+POC framework for classifying text files and detecting ransomware at runtime.
 
 ## Getting Started
 
